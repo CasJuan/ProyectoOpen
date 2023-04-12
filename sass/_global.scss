@@ -95,12 +95,9 @@ body{
 
 .sec-benefits{
     border-top: 1px solid #ddd;
-    
-    
     .intro{
         @extend .sec-features, .intro;
     }
-
     .benefit-cards{
         height: 100%;
         padding: 0 2rem 2rem 2rem;
@@ -125,5 +122,22 @@ body{
             color: #ffffffaa;
         }
     }
+}
 
+.sec-onborarding{
+    .intro{
+        @extend .sec-features, .intro;
+    }
+    .steps{
+        padding: 0 7rem 5rem 7rem;
+        max-width: 992px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .step-separator{
+            flex: 1;
+            border-top: 2px solid #ddd;
+            margin: 0 1rem;
+        }
+    }
 }
